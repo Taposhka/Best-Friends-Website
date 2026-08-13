@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f2e9" />
+    <meta
+      name="description"
+      content="Best Friends — Qo‘qonda chaqaloqlar uchun kiyim ishlab chiqaradigan kichik mahalliy biznes haqida."
+    />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Best Friends" />
+    <meta property="og:title" content="Biz haqimizda — Best Friends" />
+    <meta
+      property="og:description"
+      content="Qo‘qonda chaqaloqlar uchun kiyim ishlab chiqaradigan kichik mahalliy brend."
+    />
+    <!-- Yakuniy domen tasdiqlangach canonical va og:url teglarini shu yerga qo‘shing. -->
+    <title>Biz haqimizda — Best Friends</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23272a27'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23fffdf9'%3EBF%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="about">
+    <a class="skip-link" href="#asosiy">Asosiy mazmunga o‘tish</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Best Friends"
+          ><span class="brand-mark" aria-hidden="true">BF</span
+          ><span class="brand-copy"><strong>Best Friends</strong></span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="asosiy-menyu"
+          aria-label="Menyuni ochish"
+          data-menu-toggle
+        >
+          <span aria-hidden="true"></span><span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </button>
+        <nav
+          class="main-nav"
+          id="asosiy-menyu"
+          aria-label="Asosiy navigatsiya"
+          data-menu
+        >
+          <a href="index.html">Bosh sahifa</a
+          ><a href="mahsulotlar.html">Mahsulotlar</a
+          ><a href="biz-haqimizda.html" aria-current="page">Biz haqimizda</a
+          ><a href="boglanish.html">Bog‘lanish</a
+          ><a class="button button-small nav-order" href="buyurtma.html"
+            >Buyurtma berish</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="asosiy" data-page-transition>
+      <header class="page-hero">
+        <div class="container page-hero-inner">
+          <nav class="breadcrumbs" aria-label="Sahifa yo‘li">
+            <a href="index.html">Bosh sahifa</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Biz haqimizda</span>
+          </nav>
+          <h1 data-heading-reveal>Biz haqimizda</h1>
+        </div>
+      </header>
+      <section
+        class="section about-page-section"
+        aria-labelledby="story-title"
+        data-scroll-progress
+      >
+        <div class="container about-story-grid">
+          <div class="about-page-copy" data-reveal="left">
+            <h2 id="story-title">Qo‘qondan Toshkentgacha</h2>
+            <p>
+              Best Friends chaqaloqlar kiyimini Qo‘qonda ishlab chiqaradi.
+              Hozirgi mahsulot 0–3 oylik chaqaloqlar uchun. Mahsulot
+              Toshkent va boshqa shaharlardagi mijozlarga ham taqdim etilgan.
+            </p>
+            <div class="button-row">
+              <a class="button" href="mahsulotlar.html">Mahsulotlar</a
+              ><a class="button button-secondary" href="boglanish.html"
+                >Bog‘lanish</a
+              >
+            </div>
+          </div>
+          <figure
+            class="production-visual"
+            data-reveal="clip"
+            data-reveal-delay="55"
+            data-parallax="visual"
+          >
+            <img
+              class="future-image"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              data-future-src="assets/about-production.webp"
+              width="900"
+              height="760"
+              loading="lazy"
+              alt="Best Friends ishlab chiqarish jarayoni"
+              hidden
+            />
+            <div
+              class="production-placeholder"
+              role="img"
+              aria-label="Ishlab chiqarish rasmi tez orada joylanadi"
+            >
+              <span class="production-label"
+                >Ishlab chiqarish rasmi tez orada</span
+              >
+              <div class="production-table" aria-hidden="true">
+                <i></i><i></i><b></b>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="footer-brand" href="index.html">Best Friends</a>
+        <nav aria-label="Pastki navigatsiya">
+          <a href="index.html">Bosh sahifa</a
+          ><a href="mahsulotlar.html">Mahsulotlar</a
+          ><a href="biz-haqimizda.html">Biz haqimizda</a
+          ><a href="buyurtma.html">Buyurtma</a
+          ><a href="boglanish.html">Bog‘lanish</a>
+        </nav>
+        <a class="footer-phone" href="tel:+998903085040">+998 90 308 50 40</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span data-current-year></span> Best Friends</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

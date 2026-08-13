@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f2e9" />
+    <meta
+      name="description"
+      content="Best Friends mahsulotlari: Qo‘qonda ishlab chiqariladigan, 0–3 oylik chaqaloqlar uchun bir o‘lchamli kiyim."
+    />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Best Friends" />
+    <meta property="og:title" content="Mahsulotlar — Best Friends" />
+    <meta
+      property="og:description"
+      content="Best Friends chaqaloqlar kiyimlari katalogi."
+    />
+    <!-- Yakuniy domen tasdiqlangach canonical va og:url teglarini shu yerga qo‘shing. -->
+    <title>Mahsulotlar — Best Friends</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23272a27'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23fffdf9'%3EBF%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="catalogue">
+    <a class="skip-link" href="#asosiy">Asosiy mazmunga o‘tish</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Best Friends"
+          ><span class="brand-mark" aria-hidden="true">BF</span
+          ><span class="brand-copy"><strong>Best Friends</strong></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="asosiy-menyu"
+          aria-label="Menyuni ochish"
+          data-menu-toggle
+        >
+          <span aria-hidden="true"></span><span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </button>
+        <nav
+          class="main-nav"
+          id="asosiy-menyu"
+          aria-label="Asosiy navigatsiya"
+          data-menu
+        >
+          <a href="index.html">Bosh sahifa</a
+          ><a href="mahsulotlar.html" aria-current="page">Mahsulotlar</a
+          ><a href="biz-haqimizda.html">Biz haqimizda</a
+          ><a href="boglanish.html">Bog‘lanish</a
+          ><a class="button button-small nav-order" href="buyurtma.html"
+            >Buyurtma berish</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="asosiy" data-page-transition>
+      <header class="page-hero">
+        <div class="container page-hero-inner">
+          <nav class="breadcrumbs" aria-label="Sahifa yo‘li">
+            <a href="index.html">Bosh sahifa</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Mahsulotlar</span>
+          </nav>
+          <h1 data-heading-reveal>Mahsulotlar</h1>
+          <p class="page-lead">Katalogda bitta mahsulot ko‘rsatilgan.</p>
+        </div>
+      </header>
+
+      <section
+        class="section catalogue-section"
+        aria-label="Mahsulotlar katalogi"
+        data-scroll-progress
+      >
+        <div class="container">
+          <div class="catalog-grid stagger-group" data-stagger>
+            <article
+              class="catalog-card catalog-card-current"
+              data-reveal="scale"
+              data-tilt
+            >
+              <div class="catalog-media">
+                <img
+                  class="future-image"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                  data-future-src="assets/product-main.webp"
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  alt="Chaqaloqlar uchun Best Friends kiyimi"
+                  hidden
+                />
+                <div
+                  class="mini-product-placeholder"
+                  role="img"
+                  aria-label="Mahsulot rasmi tez orada joylanadi"
+                >
+                  <div class="mini-garment" aria-hidden="true">
+                    <span></span><i></i><i></i><i></i>
+                  </div>
+                  <p>Mahsulot rasmi tez orada</p>
+                </div>
+              </div>
+              <div class="catalog-copy">
+                <h2>Chaqaloqlar uchun kiyim</h2>
+                <ul class="card-facts">
+                  <li>0–3 oy</li>
+                  <li>Bir o‘lcham</li>
+                </ul>
+                <p class="card-price">2.60 USD</p>
+                <div class="card-actions">
+                  <a class="button" href="mahsulot.html">Batafsil</a
+                  ><a class="button button-secondary" href="buyurtma.html"
+                    >Buyurtma berish</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!--
+              QAYTA ISHLATILADIGAN MAHSULOT KARTASI ANDOZASI:
+              1. data-future-src va src qiymatini haqiqiy mahsulot rasmi bilan almashtiring.
+              2. Mahsulot nomi, yosh, o‘lcham va narxni tasdiqlangan ma’lumotlar bilan yozing.
+              3. href="yangi-mahsulot.html" qiymatini yangi batafsil sahifaga yo‘naltiring.
+              4. future-card klassini va future-product-placeholder blokini olib tashlang.
+
+              <article class="catalog-card catalog-card-current">
+                <div class="catalog-media"><img src="assets/product-2.webp" width="720" height="720" loading="lazy" alt="MAHSULOT NOMI"></div>
+                <div class="catalog-copy">
+                  <p class="card-kicker">Mahsulot</p><h2>MAHSULOT NOMI</h2>
+                  <ul class="card-facts"><li>YOSH</li><li>O‘LCHAM</li></ul>
+                  <p class="card-price">NARX VA VALYUTA</p>
+                  <div class="card-actions"><a class="button" href="yangi-mahsulot.html">Batafsil</a></div>
+                </div>
+              </article>
+            -->
+
+            <!-- 2-slot: assets/product-2.webp va tasdiqlangan mahsulot ma’lumotlari bilan almashtiriladi. -->
+            <article
+              class="catalog-card future-card"
+              data-reveal="up"
+              data-reveal-delay="55"
+            >
+              <div class="catalog-media future-media">
+                <img
+                  class="future-image"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                  data-future-src="assets/product-2.webp"
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  alt=""
+                  hidden
+                />
+                <div class="future-product-placeholder" aria-hidden="true">
+                  <span></span><i></i><b></b>
+                </div>
+              </div>
+              <div class="catalog-copy">
+                <p class="status-label">Tez orada</p>
+                <h2>Yangi mahsulot uchun joy</h2>
+              </div>
+            </article>
+
+            <!-- 3-slot: assets/product-3.webp va tasdiqlangan mahsulot ma’lumotlari bilan almashtiriladi. -->
+            <article
+              class="catalog-card future-card"
+              data-reveal="up"
+              data-reveal-delay="110"
+            >
+              <div class="catalog-media future-media future-media-lavender">
+                <img
+                  class="future-image"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                  data-future-src="assets/product-3.webp"
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  alt=""
+                  hidden
+                />
+                <div class="future-product-placeholder" aria-hidden="true">
+                  <span></span><i></i><b></b>
+                </div>
+              </div>
+              <div class="catalog-copy">
+                <p class="status-label">Tez orada</p>
+                <h2>Yangi mahsulot uchun joy</h2>
+              </div>
+            </article>
+
+            <!-- 4-slot: assets/product-4.webp va tasdiqlangan mahsulot ma’lumotlari bilan almashtiriladi. -->
+            <article
+              class="catalog-card future-card"
+              data-reveal="up"
+              data-reveal-delay="165"
+            >
+              <div class="catalog-media future-media future-media-clay">
+                <img
+                  class="future-image"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                  data-future-src="assets/product-4.webp"
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  alt=""
+                  hidden
+                />
+                <div class="future-product-placeholder" aria-hidden="true">
+                  <span></span><i></i><b></b>
+                </div>
+              </div>
+              <div class="catalog-copy">
+                <p class="status-label">Tez orada</p>
+                <h2>Yangi mahsulot uchun joy</h2>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="footer-brand" href="index.html">Best Friends</a>
+        <nav aria-label="Pastki navigatsiya">
+          <a href="index.html">Bosh sahifa</a
+          ><a href="mahsulotlar.html">Mahsulotlar</a
+          ><a href="biz-haqimizda.html">Biz haqimizda</a
+          ><a href="buyurtma.html">Buyurtma</a
+          ><a href="boglanish.html">Bog‘lanish</a>
+        </nav>
+        <a class="footer-phone" href="tel:+998903085040">+998 90 308 50 40</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span data-current-year></span> Best Friends</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
