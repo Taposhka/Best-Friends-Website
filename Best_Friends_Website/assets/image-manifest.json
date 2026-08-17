@@ -1,3 +1,9 @@
 {
-  "available": ["assets/packaging.webp"]
+  "available": [
+    "assets/packaging.webp",
+    "assets/logo-stacked.png",
+    "assets/logo-horizontal.png",
+    "assets/logo-mark.png",
+    "assets/logo-wordmark.png"
+  ]
 }

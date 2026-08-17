@@ -2,7 +2,10 @@ Best Friends uchun kelajakdagi rasm fayllari:
 
 product-main.webp  - asosiy mahsulot rasmi
 packaging.webp     - qadoq rasmi
-logo.svg           - rasmiy logotip
+logo-stacked.png    - asl vertikal logotip
+logo-horizontal.png - header uchun gorizontal logotip
+logo-mark.png       - favicon va ixcham joylar uchun belgi
+logo-wordmark.png   - faqat Best Friends yozuvi
 about-production.webp - ustaxona, jamoa yoki ishlab chiqarish rasmi
 product-2.webp      - kelajakdagi ikkinchi mahsulot rasmi
 product-3.webp      - kelajakdagi uchinchi mahsulot rasmi
@@ -14,7 +17,7 @@ Tavsiya etilgan eksport:
 - packaging.webp: 4:5 yoki kvadrat, kamida 1600 px kenglikda
 - about-production.webp: 4:3, kamida 1600 px kenglikda
 - product-2.webp, product-3.webp, product-4.webp: product-main.webp bilan bir xil nisbatda
-- logo.svg: viewBox atributli, tashqi shrift yoki bitmap rasmsiz
+- barcha logo variantlari: shaffof fon, asl rang va nisbatlar saqlangan
 
 Fayl tayyor bo‘lgach, uning `assets/...` yo‘lini image-manifest.json ichidagi
 `available` ro‘yxatiga ham qo‘shing. Sayt faqat shu ro‘yxatdagi rasmlarni
