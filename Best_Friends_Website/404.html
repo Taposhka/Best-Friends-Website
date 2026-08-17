@@ -19,10 +19,7 @@
     />
     <!-- Yakuniy domen tasdiqlangach canonical va og:url teglarini shu yerga qo‘shing. -->
     <title>Sahifa topilmadi — Best Friends</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23272a27'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23fffdf9'%3EBF%3C/text%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/png" href="assets/logo-mark.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="not-found-page" data-page="404">
@@ -30,9 +27,20 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Best Friends"
-          ><span class="brand-mark" aria-hidden="true">BF</span
-          ><span class="brand-copy"><strong>Best Friends</strong></span></a
-        ><button
+          ><picture class="brand-picture">
+            <source
+              media="(max-width: 520px)"
+              srcset="assets/logo-mark.png"
+            />
+            <img
+              class="brand-logo"
+              src="assets/logo-horizontal.png"
+              width="856"
+              height="219"
+              alt=""
+            /></picture
+        ></a>
+        <button
           class="menu-toggle"
           type="button"
           aria-expanded="false"

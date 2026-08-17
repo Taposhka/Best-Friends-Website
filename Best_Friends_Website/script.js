@@ -956,21 +956,6 @@ async function initImageLoading() {
     image.src = source;
   });
 
-  const brandMarks = document.querySelectorAll(".brand-mark");
-  if (!brandMarks.length || !availableAssets.has("assets/logo.svg")) return;
-  const logoProbe = new Image();
-  logoProbe.addEventListener("load", () => {
-    brandMarks.forEach((mark) => {
-      const logo = document.createElement("img");
-      logo.className = "brand-logo is-loaded";
-      logo.src = "assets/logo.svg";
-      logo.alt = "";
-      logo.width = 42;
-      logo.height = 42;
-      mark.replaceWith(logo);
-    });
-  });
-  logoProbe.src = "assets/logo.svg";
 }
 
 function initMarquee() {

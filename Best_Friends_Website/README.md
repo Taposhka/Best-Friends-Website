@@ -25,7 +25,7 @@ Best Friends uchun HTML5, CSS3 va oddiy JavaScript asosida tayyorlangan statik s
 Loyiha papkasida lokal HTTP serverni ishga tushiring:
 
 ```bash
-cd /home/tapo/Projects/Best_Friends_Website
+cd Best_Friends_Website
 python3 -m http.server 8000
 ```
 
@@ -138,7 +138,10 @@ Tayyorlangan fayl nomlari:
 
 - `assets/packaging.webp`
 - `assets/product-main.webp`
-- `assets/logo.svg`
+- `assets/logo-stacked.png`
+- `assets/logo-horizontal.png`
+- `assets/logo-mark.png`
+- `assets/logo-wordmark.png`
 - `assets/about-production.webp`
 - `assets/product-2.webp`
 - `assets/product-3.webp`
@@ -157,7 +160,10 @@ Masalan:
   "available": [
     "assets/packaging.webp",
     "assets/product-main.webp",
-    "assets/logo.svg"
+    "assets/logo-stacked.png",
+    "assets/logo-horizontal.png",
+    "assets/logo-mark.png",
+    "assets/logo-wordmark.png"
   ]
 }
 ```
@@ -168,16 +174,26 @@ Hero yoki mahsulot tafsilotidagi birinchi ekran rasmi uchun `loading="eager"`, p
 
 ## Rasmiy logotipni qo‘shish
 
-`assets/logo.svg` tayyor bo‘lgach, faylni joylashtiring va `assets/image-manifest.json` ro‘yxatiga `assets/logo.svg` ni qo‘shing. JavaScript barcha sahifalardagi `BF` belgini avtomatik ravishda logotip bilan almashtiradi. Yonidagi `Best Friends` matni brend nomini screen readerga beradi, shuning uchun rasmning `alt` qiymati ataylab bo‘sh qoladi.
+Rasmiy logotip to‘rtta o‘lchamga mos variantda saqlanadi. `logo-stacked.png`
+asl vertikal kompozitsiya, `logo-horizontal.png` keng headerlar uchun,
+`logo-mark.png` favicon va kichik ekranlar uchun, `logo-wordmark.png` esa faqat
+yozuv kerak bo‘lgan joylar uchun ishlatiladi. Headerdagi `<picture>` elementi
+variantni ekran kengligiga qarab avtomatik tanlaydi. Hech bir variant siqilmaydi
+yoki cho‘zilmaydi. Logotip havolasidagi `aria-label="Best Friends"` brend nomini
+screen readerga beradi, shuning uchun rasmning `alt` qiymati ataylab bo‘sh.
 
-## Telegram va Instagram havolalarini qo‘shish
+## Telegram va Instagram havolalari
 
-`buyurtma.html` va `boglanish.html` ichidagi ijtimoiy tugmalar ataylab o‘chirilgan. Rasmiy manzillar tasdiqlangach:
+Tasdiqlangan Telegram aloqa ma’lumoti `buyurtma.html` va `boglanish.html`
+fayllarida bir xil ko‘rsatiladi:
 
-1. Tegishli `<button disabled aria-disabled="true">` elementini `<a>` elementiga almashtiring.
-2. Tasdiqlangan `href` manzilini kiriting.
-3. `disabled` va `aria-disabled` atributlarini olib tashlang.
-4. Bir xil havolani ikkala sahifada ham yangilang.
+- ism: `Iqbol Sattarov`;
+- username: `@app5040storegmailcom`;
+- havola: `https://t.me/app5040storegmailcom`.
+
+Telegram ma’lumoti o‘zgarsa, ism, username va havolani ikkala sahifada ham
+yangilang. Instagram manzili hali tasdiqlanmaganligi sababli uning tugmasi
+o‘chirilgan holatda qoladi.
 
 ## Telefon raqamini yangilash
 
@@ -239,11 +255,9 @@ So‘ng `robots.txt` fayliga `Sitemap: https://SIZNING-DOMENINGIZ/sitemap.xml` q
 
 ## Hali tasdiqlanmagan ma’lumotlar
 
-- mahsulot va qadoqning haqiqiy rasmlari;
-- rasmiy logotip;
 - ishlab chiqarish yoki jamoa rasmi;
 - mahsulot materiali, ranglari va parvarish ko‘rsatmalari;
-- Telegram va Instagram rasmiy manzillari;
+- Instagram rasmiy manzili;
 - yetkazib berish hududlari, narxi va shartlari;
 - buyurtma qabul qilish vaqtlari;
 - yakuniy domen nomi;
